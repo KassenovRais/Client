@@ -1,0 +1,83 @@
+.orderBlock{
+	width: 30%;
+	min-height: 20vh;
+	backdrop-filter: blur(10px) ;
+	box-sizing: border-box;
+	padding: 30px;
+	box-shadow: 1px 1px 20px 1px rgba(235, 231, 231, 0.589);
+	position: fixed;
+	top: 2vh;
+	right: 2vw;
+	color: white;
+	z-index: 10;
+}
+.dishTitle span {
+	margin-left: 1vw;
+}
+.dishTitle{
+	cursor: pointer;
+	animation: drop 0.4s linear;
+}
+.BTNCreate{
+	width: 50%;
+	border: none;
+	margin: 2vh auto;
+	height: 7vh;
+	background: teal;
+	color: white;
+	font-weight: 700;
+	font-size: 1.3rem;	
+	cursor: pointer;
+}
+.BTNCreate:disabled{
+	background: rgba(0, 128, 128, 0.459);
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+@keyframes drop {
+	0%{
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+#backgroundVideo {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
+.blockCheck{
+	display: flex;
+	align-items: center;
+
+}
+.title{
+	width: 80%;
+	height: 14vh;
+	z-index: 2;
+	mix-blend-mode:exclusion;
+
+}
+
+.img {
+	width: 30%;
+	mix-blend-mode:exclusion;
+	position: absolute;
+	top: 3vh;
+	right: 30vw;
+	z-index: -2;
+	
+
+}

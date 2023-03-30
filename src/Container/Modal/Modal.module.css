@@ -1,0 +1,67 @@
+.modal{
+	width: 55%;
+	min-height: 30vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 30px;
+	animation: drop 0.3s linear;
+	box-sizing: border-box;
+	padding: 8vh  0;
+	backdrop-filter: blur(30px);
+}
+
+@keyframes drop {
+	0%{
+		transform: translateY(-400px);
+		opacity: 0;
+	}
+	75%{
+		transform: translateY(100px);
+		opacity: 0.7;
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.postData{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.enter{
+	margin: 3vh 0;
+	outline: none;
+	border:  1px solid teal;
+	height: 5vh;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	color: white;
+	font-weight: 700;
+	background: none;
+}
+.enter::placeholder{
+	color: white;
+	font-weight: 700;
+}
+.BTN{
+	width: 40%;
+	border: none;
+	margin: 2vh 2vw;
+	height: 7vh;
+	background: teal;
+	color: white;
+	font-weight: 700;
+	font-size: 1.3rem;	
+	cursor: pointer;
+}
+.buttonBlock{
+	width: 100%;
+}
+.BTN:disabled{
+	background: rgba(0, 128, 128, 0.402);
+}
